@@ -361,7 +361,7 @@ public class MedicaoPressao extends javax.swing.JFrame {
     private void salvarMedicao() {
 
         if (txtData.getText().isEmpty() || txtHora.getText().isEmpty() || txtSistolica.getText().isEmpty() || txtDiastolica.getText().isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Favor preencher todos os campos de texto.");
+            JOptionPane.showMessageDialog(this, "Atenção: preencher todos os campos de texto.");
             return;
 
         }
@@ -373,7 +373,7 @@ public class MedicaoPressao extends javax.swing.JFrame {
         boolean stress = chkStress.isSelected();
         
         if (!data.matches("[0-9]{2}/[0-9]{2}/[0-9]{2}")) {
-            JOptionPane.showMessageDialog(this, "Data inválida. Use o formato DD/MM/AA.");
+            JOptionPane.showMessageDialog(this, "Data inválida. Corrija o formato DD/MM/AA.");
             return;
         }
         if (!hora.matches("[0-9]{2}:[0-9]{2}")) {
@@ -442,7 +442,7 @@ public class MedicaoPressao extends javax.swing.JFrame {
                 model.addRow(new Object[]{data, hora, sistolica, diastolica, stress});
             }
         } catch (IOException e) {
-            JOptionPane.showMessageDialog(this, "Erro ao carregar os dados.", "Erro", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Atenção Erro ao carregar os dados.", "Erro", JOptionPane.ERROR_MESSAGE);
         }
     }
 
