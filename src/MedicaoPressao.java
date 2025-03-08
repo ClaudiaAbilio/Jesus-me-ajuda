@@ -372,8 +372,8 @@ public class MedicaoPressao extends javax.swing.JFrame {
         int diastolica = Integer.parseInt(txtDiastolica.getText().trim());
         boolean stress = chkStress.isSelected();
         
-        if (!data.matches("[0-9]{2}/[0-9]{2}/[0-9]{2}")) {
-            JOptionPane.showMessageDialog(this, "Data inválida. Corrija o formato DD/MM/AA.");
+        if (!data.matches("[0-9]{2}/[0-9]{2}/[0-9]{4}")) {
+            JOptionPane.showMessageDialog(this, "ATENÇÃO: Data inválida. Corrija o formato DD/MM/AAAA.");
             return;
         }
         if (!hora.matches("[0-9]{2}:[0-9]{2}")) {
