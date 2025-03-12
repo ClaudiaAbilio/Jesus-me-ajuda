@@ -123,7 +123,7 @@ public class MedicaoPressao extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Medição de Pressão");
+        jLabel1.setText("Medição de Pressão Cardíaca");
         jLabel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         tblMedicoes.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
