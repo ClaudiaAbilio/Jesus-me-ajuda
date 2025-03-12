@@ -123,7 +123,7 @@ public class MedicaoPressao extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Medição de Pressão");
+        jLabel1.setText("Medição de Pressão Cardíaca");
         jLabel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         tblMedicoes.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
@@ -361,7 +361,7 @@ public class MedicaoPressao extends javax.swing.JFrame {
     private void salvarMedicao() {
 
         if (txtData.getText().isEmpty() || txtHora.getText().isEmpty() || txtSistolica.getText().isEmpty() || txtDiastolica.getText().isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Atenção: preencher todos os campos de texto.");
+            JOptionPane.showMessageDialog(this, "Atenção: preencher todos os campos de texto !");
             return;
 
         }
@@ -377,7 +377,7 @@ public class MedicaoPressao extends javax.swing.JFrame {
             return;
         }
         if (!hora.matches("[0-9]{2}:[0-9]{2}")) {
-            JOptionPane.showMessageDialog(this, "Hora inválida. Use o formato hh:mm.");
+            JOptionPane.showMessageDialog(this, "Atenção: Hora inválida! Use o formato hh:mm.");
             return;
         }
         
