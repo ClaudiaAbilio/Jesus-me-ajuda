@@ -418,7 +418,7 @@ public class MedicaoPressao extends javax.swing.JFrame {
                 bw.newLine();
             }
         } catch (IOException e) {
-            JOptionPane.showMessageDialog(this, "Erro ao salvar os dados.", "Erro", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Atenção: Erro ao salvar os dados.", "Erro", JOptionPane.ERROR_MESSAGE);
         }
     }
 
@@ -442,7 +442,7 @@ public class MedicaoPressao extends javax.swing.JFrame {
                 model.addRow(new Object[]{data, hora, sistolica, diastolica, stress});
             }
         } catch (IOException e) {
-            JOptionPane.showMessageDialog(this, "Atenção Erro ao carregar os dados.", "Erro", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Atenção Erro ao carregar os dados !!", "Erro", JOptionPane.ERROR_MESSAGE);
         }
     }
 
