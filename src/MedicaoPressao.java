@@ -418,7 +418,7 @@ public class MedicaoPressao extends javax.swing.JFrame {
                 bw.newLine();
             }
         } catch (IOException e) {
-            JOptionPane.showMessageDialog(this, "Erro ao salvar os dados.", "Erro", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Atenção: Erro ao salvar os dados.", "Erro", JOptionPane.ERROR_MESSAGE);
         }
     }
 
